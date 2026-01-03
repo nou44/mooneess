@@ -1,0 +1,304 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Moonees NFT</title>
+    <link rel="stylesheet" href="style.css">
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+    <link rel="icon" type="image/png" href="images/images/moonicin.png">
+
+<!-- Menu Toggle Button (Modern Hamburger) -->
+<div id="menu-toggle" onclick="toggleMenu()">
+    <span class="bar"></span>
+    <span class="bar middle"></span>
+    <span class="bar"></span>
+  </div>
+  
+  <!-- Sidebar Navbar -->
+  <div id="side-navbar">
+    <ul>
+        <li><a href="#home">Home</a></li>
+        <li><a href="#story">Story</a></li>
+        <li><a href="#features">Moonees live</a></li>
+        <li><a href="#minting">Mint</a></li>
+        <li><a href="#roadmap">Our Roadmap</a></li>
+     
+    </ul>
+  </div>
+  
+
+</head>
+
+<body>
+<main>
+        
+       <div class="banner">
+    <img id="banner-logo" src="image/album.png">
+</div>
+
+          <!-- Menu Toggle Button -->
+
+
+        <div id="home" class="slider" style="
+            --width: 100px;
+            --height: 40px;
+            --quantity: 10;">
+            <div class="list">
+                <div class="item" style="--position: 1"><img src="image/album.png" alt=""></div>
+                <div class="item" style="--position: 2"><img src="image/moonai.png" alt=""></div>
+                <div class="item" style="--position: 3"><img src="image/coin.png" alt=""></div>
+                <div class="item" style="--position: 4"><img src="image/hashcach.png" alt=""></div>
+                <div class="item" style="--position: 5"><img src="image/Moonees.png" alt=""></div>
+                <div class="item" style="--position: 6"><img src="image/Nohl.png" alt=""></div>
+                <div class="item" style="--position: 7"><img src="image/b.png" alt=""></div>
+                <div class="item" style="--position: 8"><img src="image/spunk.png" alt=""></div>
+                <div class="item" style="--position: 9"><img src="image/star.png" alt=""></div>
+                <div class="item" style="--position: 10"><img src="image/nakamoto.png" alt=""></div>
+            </div>
+        </div>
+        
+
+        <div class="slider" reverse="true" style="
+            --width: 100px;
+            --height: 100px;
+            --quantity: 9;
+        ">
+            <div class="list">
+                <div class="item" style="--position: 1"><img src="image/GRID pinkback yellow.png" alt=""></div>
+                <div class="item" style="--position: 2"><img src="image/GRID YELLOW back red.png" alt=""></div>
+                <div class="item" style="--position: 3"><img src="image/GRID YELLOW back yellow.png4.png" alt=""></div>
+                <div class="item" style="--position: 4"><img src="image/GRID YELLOW back yellow wals.png" alt=""></div>
+                <div class="item" style="--position: 5"><img src="image/GRID YELLOW back yellow.png4.png" alt=""></div>
+                <div class="item" style="--position: 6"><img src="image/CHOK blue body back blue.png" alt=""></div>
+                <div class="item" style="--position: 7"><img src="image/blue and white back BILI body white.png" alt=""></div>
+                <div class="item" style="--position: 8"><img src="image/ORANGE CLOTH BLID.png" alt=""></div>
+                <div class="item" style="--position: 9"><img src="image/ORANGE WHITE WILO.png" alt=""></div>
+            </div>
+        </div>
+    </main>
+
+<section id="story-slider" class="story-slider">
+
+  <div class="story-slide active">
+    <div class="video-stack">
+      <video src="vedio/any vedio.mp4" autoplay muted loop></video>
+      <video src="vedio/blackk vedio.mp4" autoplay muted loop></video>
+      <video src="vedio/vedio yellows (2).mp4" autoplay muted loop></video>
+    </div>
+
+    <div class="story-text-box">
+      <h2>🛸 The Origin of the MoonEees</h2>
+      <p>
+        Three cosmic tribes.<br>
+        Unique DNA, powers, destinies.<br>
+        Born to reclaim a forgotten galaxy.
+      </p>
+    </div>
+  </div>
+
+  <div class="story-slide">
+    <div class="video-stack">
+      <video src="vedio/vedio yellows (2).mp4" autoplay muted loop></video>
+      <video src="vedio/vedio pink.mp4" autoplay muted loop></video>
+      <video src="vedio/vedio blue 2.mp4" autoplay muted loop></video>
+    </div>
+
+    <div class="story-text-box">
+      <h2>🌍 The Great Earth Journey</h2>
+      <p>
+        A celestial explosion shattered their moons.<br>
+        Evolution was inevitable.    A celestial explosion shattered their moons.<br>
+        Evolution was inevitable.
+        Evolution was inevitable.
+        Evolution was inevitable.
+        Evolution was inevitable.
+        Evolution was inevitable.
+      </p>
+    </div>
+  </div>
+
+  <div class="story-slide">
+    <div class="video-stack">
+      <video src="vedio/vedio yellows (2).mp4" autoplay muted loop></video>
+      <video src="vedio/vedio blue 1.mp4" autoplay muted loop></video>
+      <video src="vedio/yelow vedio.mp4" autoplay muted loop></video>
+    </div>
+
+    <div class="story-text-box">
+      <h2>🔁 The Birth of Crypto Sperm</h2>
+      <p>
+        New forms emerged.<br>
+        Powered by Ethereum.
+      </p>
+    </div>
+  </div>
+
+  <button id="nextSlide" class="story-btn">NEXT</button>
+
+</section>
+
+      
+      
+        
+      </section>
+      <a href="https://nou44.github.io/-3moonees/" class="glow-btn-link">
+        <button class="glow-btn">
+        <video
+  class="btn-logo"
+  src="vedio/any vedio.mp4"
+  autoplay
+  muted
+  loop
+  playsinline>
+</video>
+          Ordre Free
+        </button>
+      </a>
+    <section id="features" class="features-section">
+        <h2 class="section-title">Why Choose Our NFT Collection</h2>
+        <div class="features-container">
+            <div class="feature-card">
+                <img src="image/blue abou.gif" alt="Feature 1">
+                <h3>Unique Artwork</h3>
+                <p>Each NFT in our Collection is a rare digital masterpiece,
+                     ensuring originality and exclusivity</p>
+            </div>
+            <div class="feature-card">
+                <img src="image/pink about.gif" alt="Feature 2">
+                <h3>Exlusive Access</h3>
+                <p>Holding our NFTs grants you access to private
+                     content, exclusive evente, and VIP community perks
+                     </p>
+            </div>
+            <div class="feature-card">
+                <img src="image/white about.gif" alt="Feature 3">
+                <h3>Reward System</h3>
+                <p>The longer you hold your NFT, the more rewards 
+                    and benefits you unlock within our ecosystem</p>
+            </div>
+        </div>
+    </section>
+    <section id="roadmap" class="roadmap-section">
+        <h2 class="section-title">Our Roadmap</h2>
+        <div class="timeline">
+            
+            <!-- المرحلة 1 -->
+            <div class="timeline-item">
+                <div class="timeline-date">2022 - 2024</div>
+                <div class="timeline-content">
+                    <h3>Project Conception & Development</h3>
+                    <p>Three years ago, we planted the first seed of MoonEees. It started with passion, deep digital creativity, and the vision to build a meaningful Web3 experience. This wasn’t just about NFTs — it was about storytelling, legacy, and connection.</p>
+                </div>
+            </div>
+    
+            <!-- المرحلة 2 -->
+            <div class="timeline-item">
+                <div class="timeline-date">Q2 2025</div>
+                <div class="timeline-content">
+                    <h3>Moonees NFT Launch on Polygon</h3>
+                    <p>After months of design, brainstorming, and experimentation, the idea matured into a tangible universe: The MoonEees. Each tribe was carefully designed to reflect uniqueness, rarity, and identity.</p>
+                </div>
+            </div>
+    
+            <!-- المرحلة 3 -->
+            <div class="timeline-item">
+                <div class="timeline-date">Q3 2025</div>
+                <div class="timeline-content">
+                    <h3>Community Growth & Partnerships</h3>
+                    <p>We launched the first collection not just to showcase our work, but to build a community — one that shares the same energy, curiosity, and futuristic vision. Minting a MoonEee meant joining something bigger than a drop.</p>
+                </div>
+            </div>
+    
+            <!-- المرحلة 4 -->
+            <div class="timeline-item">
+                <div class="timeline-date">Q4 2025</div>
+                <div class="timeline-content">
+                    <h3>Main Collection Launch on Ethereum</h3>
+                    <p>As our universe expanded, evolution became necessary. Crypto Sperm is the enhanced version of the MoonEees — built on Ethereum for stronger integration and future compatibility. The lore continues, but with higher energy and more powerful traits.</p>
+                </div>
+            </div>
+    
+            <!-- المرحلة 5 -->
+            <div class="timeline-item">
+                <div class="timeline-date">2026 & Beyond</div>
+                <div class="timeline-content">
+                    <h3>The Moon Token is Coming</h3>
+                    <p>The next big step in our universe is near: The official Moon Token. A coin dedicated to the holders of MoonEees and the evolving Crypto Sperm world. Click "See More" to explore its purpose, benefits, and how it will empower our community.</p>
+                </div>
+            </div>
+        </div>
+    
+    <a href="https://nou44.github.io/mooncoin/" class="see-more-btn-link">
+    <button class="see-more-btn">See More</button>
+    </a>
+    </section>
+    <section id="minting" class="minting-section">
+        <div class="container">
+            <h2 class="mint-title">Mint Your <span>Moonees NFT</span></h2>
+            <p class="mint-subtitle">Limited supply available on the Polygon network.</p>
+    
+            <!-- صور دائرية لعرض NFTs -->
+            <div class="nft-gallery">
+                <img src="images/images/img11.jpeg" class="nft-img" alt="NFT 1">
+                <img src="images/images/img22.jpeg" class="nft-img" alt="NFT 2">
+                <img src="images/images/img44.jpeg" class="nft-img" alt="NFT 3">
+                <img src="images/images/img55.jpeg" class="nft-img" alt="NFT 4">
+            </div>
+    
+            <div class="mint-box">
+                <p class="nft-count">🔥 <span id="nft-count">200</span> NFTs remaining</p>
+                <button id="mint-btn" class="mint-button">Mint Now</button>
+                <p class="mint-info">Price: <strong>20.05 ETH</strong> | Network: <strong>Polygon</strong></p>
+            </div>
+    <p class="wallet-instruction">Make sure your MetaMask is connected to Polygon!</p>
+        </div>
+    </section>
+    <section class="about-section" id="about">
+        <div class="about-container">
+            <div class="image-box">
+                <img src="image/smart halvin .png" alt="صورتك الشخصية">
+            </div>
+            <div class="info-box">
+                <h2>Yahya & Nohayla</h2>
+                <h4>Web Designer / programmer/ Digital Artist</h4>
+                <p>
+                
+🧑‍💻 
+I’m a multidisciplinary JavaScript developer, Web3 enthusiast, and digital artist with a passion for blending technology and creativity.
+With solid experience in frontend development, I build clean, responsive interfaces and interactive blockchain experiences that push the limits of modern web design.
+
+On the design side, I specialize in UI/UX design using Figma, creating smooth user journeys and pixel-perfect layouts. My artistic side helps me bring unique visual identity to every project I touch — whether it’s an NFT collection, a dApp, or a custom website.
+
+I love crafting ideas from scratch and turning them into beautiful, functional digital realities.
+                </p>
+                <button class="portfolio-btn">View Portfolio</button>
+            </div>
+        </div>
+    </section>
+    <footer class="footer-section">
+        <div class="footer-container">
+            <div class="footer-logo">
+                <img src="images/images/logo logo .png" alt="Group Logo" class="logo-img">
+            </div>
+            <div class="footer-info">
+                <p>&copy; 2025 Moonees. All Rights Reserved.</p>
+                <p>Website Designed by <span>Yahya Draoui</span></p>
+            </div>
+        </div>
+    </footer>
+   
+
+      <div class="social-icons">
+        <li> <a href="https://x.com/YahyaDraou52068"><img src="image/icons8-twitter-96.png" title="twitter"></a></li>
+        <li> <a href="https://discord.gg/sKfanbFtfa"><img src="image/icons8-discorde-100.png" title="discord"></a></li>
+            <li> <a href="//https://instagram.com/moonees33"><img src="image/icons8-nouveau-message-100.png" title="instagrame"></a></li>
+
+      
+      <script src="app.js"></script>
+     
+</body>
+</html>
