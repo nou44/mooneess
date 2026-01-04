@@ -152,7 +152,7 @@ main{
 }
 @media (max-width: 768px) {
   .banner {
-    height: 260px;
+    height: 240px;
   }
 
   #banner-logo {
