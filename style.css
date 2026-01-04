@@ -140,6 +140,15 @@ main{
     display: grid;
     place-items: center;
 }
+@supports (-webkit-touch-callout: none) {
+  body::before {
+    content: "";
+    position: fixed;
+    inset: 0;
+    background: #000;
+    z-index: -1;
+  }
+}
 
 
 #banner-logo {
