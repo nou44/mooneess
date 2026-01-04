@@ -440,17 +440,25 @@ const logos = [
   "image/Leonardo_Phoenix_09_Prompt_detailsA_cute_surreal_floating_crea_3 (3).png"
 ];
 
-let current = 0;
-const banner = document.getElementById("banner-logo");
+
+const img = document.getElementById("banner-logo");
+let i = 0;
+
+function rand(min, max) {
+  return Math.random() * (max - min) + min;
+}
 
 setInterval(() => {
-  banner.style.opacity = 0;
-  banner.style.transform = "scale(0.9)";
+  img.style.opacity = 0;
 
   setTimeout(() => {
-    current = (current + 1) % logos.length;
-    banner.src = logos[current];
-    banner.style.opacity = 1;
-    banner.style.transform = "scale(1)";
-  }, 300);
+    i = (i + 1) % logos.length;
+    img.src = logos[i];
+
+    const x = rand(-40, 40);
+    const y = rand(-20, 20);
+
+    img.style.transform = `translate3d(${x}px, ${y}px, 0) scale(1)`;
+    img.style.opacity = 1;
+  }, 250);
 }, 500);
