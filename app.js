@@ -48,7 +48,12 @@ const camera = new THREE.PerspectiveCamera(
     0.1,
     1000
 );
-const renderer = new THREE.WebGLRenderer({ alpha: true });
+const renderer = new THREE.WebGLRenderer({ 
+  alpha: true,
+  powerPreference: "high-performance",
+  antialias: false
+});
+
 renderer.setSize(window.innerWidth, window.innerHeight);
 
 // ضبط خصائص الطبقة الخلفية للنجوم لتكون شاملة وخلف كل شيء
@@ -428,16 +433,16 @@ btn.addEventListener("click", () => {
 });
 
 const logos = [
-  "image/imag1.png",
-  "image/image 2.png",
-  "image/image 3.png",
-  "image/image4.png",
-  "image/image 5.png",
-  "image/image 6.png",
-  "image/image 7.png",
-  "image/image 9.png",
-  "image/image 10.png",
-  "image/Leonardo_Phoenix_09_Prompt_detailsA_cute_surreal_floating_crea_3 (3).png"
+  "image/banner1.png",
+  "image/banner2.png",
+  "image/banner3.png",
+  "image/banner4.png",
+  "image/banner6.png",
+  "image/banner 6.png",
+  "image/banner7.png",
+  "image/banner8.png",
+  "image/banner9.png",
+  "image/image 10 (2).png"
 ];
 
 

@@ -46,7 +46,7 @@ main{
   #menu-toggle .bar {
     height: 3px;
     width: 100%;
-    background-color: #f07e20;
+    background-color: #f8f4f1;
     transition: all 0.3s ease;
     border-radius: 2px;
   }
@@ -57,7 +57,7 @@ main{
   }
   
   #menu-toggle:hover .bar {
-    background-color: #fdfbfb;
+    background-color: #f07e20;
   }
   
   #side-navbar {
@@ -136,7 +136,7 @@ main{
     width: 100%;
     height: 400px;
     position: relative;
-    overflow: hidden;
+     overflow: hidden;
     display: grid;
     place-items: center;
 }
@@ -145,8 +145,19 @@ main{
     content: "";
     position: fixed;
     inset: 0;
-    background: #000;
+    
     z-index: -1;
+  }
+}
+@media (max-width: 768px) {
+  #banner-logo {
+    display: block;
+    margin: 0 auto;
+    transform: none !important;
+  }
+
+  .slider {
+    margin-top: 25px;
   }
 }
 
@@ -156,17 +167,18 @@ main{
     width: 100%;
     height: auto;
     transition: opacity 0.5s ease, transform 0.5s ease;
-    filter: drop-shadow(0 0 12px rgba(255,255,255,0.6));
+    filter: drop-shadow(0 0 12px rgba(234, 96, 41, 0.6));
     will-change: transform, opacity;
 }
 @media (max-width: 768px) {
   .banner {
-    height: 240px;
+    height: 250px;
   }
 
   #banner-logo {
     max-width: 240px;
-  }
+   
+   }
 }
 
       
@@ -189,7 +201,7 @@ main{
     animation-delay: calc( (10s / var(--quantity)) * (var(--position) - 1) - 10s)!important;
 }
 .slider .list .item img{
-    width: 90%;
+    width: 95%;
     
 }
 
@@ -223,6 +235,26 @@ main{
     }to{
         left: 100%;
     }
+}
+
+@media (max-width: 768px) {
+
+  .slider .list{
+      width: 100%;
+      left: 0;
+      justify-content: center;
+  }
+
+  .slider{
+      margin-top: 30px;
+      margin-bottom: 20px;
+  }
+
+  .slider .list .item{
+      left: 50%;
+      transform: translateX(-50%);
+  }
+
 }
 
 .story-slider {
@@ -515,6 +547,8 @@ color: #f07e20;
     
 
 }
+
+
 
 .features-section {
     text-align: center;
@@ -909,11 +943,7 @@ border-radius: 30px;
     
   
 @media  screen and (max-width: 1024px) {
-    .banner img{
-      
-        left: 20%;
-       
-    }
+  
     .feature-card{
         width: 200px;
     }
@@ -927,21 +957,14 @@ width: 80%;
 
 @media screen and (max-width: 768px){
     
-    
-    .banner img{
-        height: auto;
-        width: 300px;
-        left: 20%;
-        justify-content: center;
-    } 
+   
     .effect, .text, content{
         left: 5px;
         top: 5px;
     }
     .slider .list .item img{
         position: relative;
-        bottom: 10px;
-    
+      
     }
     .glow-btn{
         padding: 2px 8px 5px 12px;
@@ -963,25 +986,14 @@ width: 80%;
     .story-image{
        width: 50%;
     } 
-    .body{
-        background-size: 100% auto;
-        background-position: center;
-    }
+   
     .feature-card{
         width: 200px;
     }
 }
 
-
 @media screen and(max-width:360px) {
-    .body{
-        background-size: contain;
-        background-position: center;
-    }
-    .banner img{
-      width: 100px;
-      right: 10px;
-    }
+ 
     .glow-btn{
         padding: 3px 5px;
         font-size: 10px;
@@ -1012,4 +1024,10 @@ width: 80%;
         max-width: 250px; /* تصغير حجم الصورة قليلاً */
         margin-top: 15px;
     }
+}
+
+@media (max-width: 768px) {
+  .social-icons {
+    top: 25%;   /* كان 45% → طلع الفوق شوية */
+  }
 }
