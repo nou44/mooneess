@@ -8,20 +8,21 @@
   
 }
 
-
 body{
     margin: 0;
     overflow-x: hidden;
-    background-size: cover;
-    background:linear-gradient(to right, #312c32, #000000);  
-    position: relative; 
-    background-repeat: no-repeat;
+    background: linear-gradient(to right, #312c32, #000000);
     min-height: 100vh;
-    width: 100vw;
-    background-attachment: fixed;
-  
-
+    width: 100%;
 }
+
+/* خلفية ثابتة خاصة بـ iPhone */
+@supports (-webkit-touch-callout: none) {
+  body{
+    background-attachment: scroll;
+  }
+}
+
 
 main{
     width: (1000px, 80vw);
@@ -156,9 +157,7 @@ main{
       padding-top: 40px;
   }
 
-  #banner-logo{
-      transform: translateY(25px);
-  }
+  
 
 }
 @media (max-width: 430px) {
@@ -168,10 +167,7 @@ main{
       padding-top: 70px;
   }
 
-  #banner-logo{
-      transform: translateY(40px);
-  }
-
+ 
 }
 
 
@@ -350,6 +346,21 @@ main{
   transition: all 1.3s cubic-bezier(0.19, 1, 0.22, 1);
 }
 
+@supports (-webkit-touch-callout: none) {
+
+  /* حبْس خروج الفيديو من الإطار */
+  .video-stack {
+    overflow: hidden;
+    transform: translateZ(0);
+  }
+
+  .video-stack video {
+    object-fit: cover;
+    backface-visibility: hidden;
+    will-change: transform;
+  }
+
+}
 /* text box */
 .story-text-box {
   width: 45%;
@@ -516,7 +527,7 @@ color: #f07e20;
     cursor: pointer;
     display: flex;
     align-items: center;
-    box-shadow: 0 0 10px #fff;
+    box-shadow: 0 0 10px #e86f0c;
     transition: transform 0.3s ease, box-shadow 0.3s ease;
     z-index: 1000;
 }
@@ -1042,6 +1053,6 @@ width: 80%;
 
 @media (max-width: 768px) {
   .social-icons {
-    top: 25%;   /* كان 45% → طلع الفوق شوية */
+    top: 30%;   /* كان 45% → طلع الفوق شوية */
   }
 }
