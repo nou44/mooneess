@@ -467,3 +467,10 @@ setInterval(() => {
     img.style.opacity = 1;
   }, 250);
 }, 500);
+
+const openBtn = document.getElementById('openNFT');
+const closeBtn = document.getElementById('closeNFT');
+const section = document.getElementById('nftSection');
+
+openBtn.onclick = () => section.classList.add('active');
+closeBtn.onclick = () => section.classList.remove('active');
