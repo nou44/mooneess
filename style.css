@@ -173,7 +173,7 @@ main{
 
 
 #banner-logo {
-    max-width: 320px;
+    max-width: 500px;
     width: 100%;
     height: auto;
     transition: opacity 0.5s ease, transform 0.5s ease;
@@ -678,7 +678,7 @@ main{
     cursor: pointer;
     transition: 0.3s;
   box-shadow: 0 0 20px #f07e20;
-    position: absolute;
+    position: fixed;
     bottom: 20px; /* تثبيت الزر في الأسفل */
     left: 50%;
     transform: translateX(-50%); /* يجعله في المنتصف أفقيًا */
@@ -1081,11 +1081,11 @@ color: #ffffff;
 
 .image-box {
     position: relative;
-    width: 180px;
-    height: 180px;
+    width: 250px;
+    height: 250px;
     border-radius: 50%;
     overflow: hidden;
-   border: 2px solid #f07e20;
+   border: 1px solid #f07e20;
   cursor: pointer;
   box-shadow: 0 0 20px #f07e20;
     transition: transform 0.3s ease-in-out;
@@ -1111,7 +1111,7 @@ color: #ffffff;
 .info-box h2 {
     font-size: 28px;
     font-weight: 600;
- 
+ font-family:"Titan One", sans-serif; 
 }
 
 .info-box h4 {
@@ -1145,7 +1145,7 @@ border-radius: 30px;
 }
 
 .portfolio-btn:hover {
-    background: #e6b800;
+   padding: 14px 22px;
     transform: scale(1.1);
 }
 .footer-section {

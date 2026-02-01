@@ -288,7 +288,7 @@ document.addEventListener("DOMContentLoaded", () => {
     }, "-=0.5");
 });
 document.getElementById("mint-btn").addEventListener("click", function() {
-    window.open("https://opensea.io/collection/YOUR_COLLECTION_NAME", "_blank");
+    window.open("https://mint.moonees.org", "_blank");
 });
 document.addEventListener("DOMContentLoaded", () => {
     gsap.registerPlugin(ScrollTrigger);
